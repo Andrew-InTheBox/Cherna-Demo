@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<messages>
+
+  <message>
+    <onconnect>1</onconnect>
+    <delay>0</delay>
+    <text>Welcome to #name! FYI roaming bots may look like players, take care. Press B for more server info, rules, and the Discord link. And have fun!</text>
+  </message>
+
+  <message>
+    <deadline>600</deadline>
+    <shutdown>1</shutdown>
+    <text>Server restart in #tmin minutes.</text>
+  </message>
+
+</messages>

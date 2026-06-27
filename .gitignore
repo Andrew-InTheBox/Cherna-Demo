@@ -1,0 +1,67 @@
+# Root workshop mods: keep only the folder scaffold metadata in Git.
+/@*/*
+!/@*/
+!/@*/meta.cpp
+
+# Root server mods: Steam-backed folders keep only scaffold metadata in Git.
+/_@*/*
+!/_@*/
+!/_@*/meta.cpp
+!/_@Heatmap/
+*.exe
+*.RPT
+*.ADM
+*.log
+*.dll
+*.bisign
+*.pbo
+# Allow all files in _@Heatmap including pbo, dll, bisign
+!/_@Heatmap/**/*.pbo
+!/_@Heatmap/**/*.bisign
+!/_@Heatmap/**/*.dll
+*.bin
+*.vdf
+*.ebo
+*.mdmp
+/battlefield
+/battleye
+/bliss
+/dta
+/keys
+/addons
+/appcache
+/logs
+/tmp
+
+/mpmissions/Expansion.chernarusplus/storage_1/
+*/storage_1/
+mpmissions/main.hashima/storage_1/
+mpmissions/main.hashima/areaflags.map
+cache.ch
+dayz.gproj
+.env
+
+# Ignore heatmap session files except the example
+config/Heatmap/*.json
+config/Heatmap/session_*.json
+!config/Heatmap/example_Heatmap.json
+config/ExpansionMod/Settings/SocialMediaSettings.json
+config/EXTrace_Profiling_*.csv
+config/PermissionsFramework/Players/
+config/PermissionsFramework/Permissions/
+
+.vscode/
+.continueignore
+__pycache__/
+.mypy_cache/
+custom_scripts/*.py[cod]
+custom_scripts/.pytest_cache/
+custom_scripts/.ruff_cache/
+custom_scripts/**/output/*
+!custom_scripts/**/output/.gitkeep
+
+*.png
+
+# _@Heatmap is custom local code, not Steam-managed workshop content.
+!/_@Heatmap/
+!/_@Heatmap/**
